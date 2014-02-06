@@ -19,6 +19,10 @@
 
 		if (src.client.handle_spam_prevention(message,MUTE_IC))
 			return
+	//Meme stuff
+	if(!speech_allowed && usr == src)
+		usr << "\red You can't speak."
+		return
 
 
 	if (src.stat == 2)
